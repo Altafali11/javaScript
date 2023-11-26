@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+      <style>
+        #div1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top:  40vh;
+            transition: 3s;
+        }
+
+      </style>
+<body>
+
+    <div id="div1" onmouseenter="zoomIn()" onmouseleave="zoomOut()">       
+    <p>I MISS YOU ANJALI</p>
+     </div>
+
+    <script>
+        function zoomIn(){
+           let f =  document.querySelector("#div1");
+           f.style.color="green";
+           f.style.fontSize = "25px";
+           f.style.transform = "rotate(360deg)";
+        }
+        function zoomOut(){
+           let s =   document.querySelector("#div1");
+           s.style.color="red";
+           s.style.fontSize = "5px";
+           s.style.transform = "rotate(0deg)";
+        }
+    </script>
+</body>
+</html>
